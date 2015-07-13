@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<!-- please note that the idea and design of the template was borrowed from http://www.codecademy.com/Smwaters/codebits/Uln4W/edit-->
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script src="bower-components/jquery/2.1/dist/jquery.min.js">
+		</script>
+
+		<script src="bower-components/bootstrap/2.1/dist/boot-strap.min.js">
+		</script>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <script src='js/application.js'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+		<title>Connect Four</title>
+	</head>
+	<body>
+        <h1>Connect Four</h1>
+        <table><tr><td>
+        <!-- adds column 1-->
+        <div class="gamecontainer">
+        
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+         <!-- adds column 2--> 
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+         <!-- adds column 3-->
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+         <!-- adds column 4-->
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+          <!-- adds column 5-->
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+          <!-- adds column 6-->
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+          <!-- adds column 7-->
+            <div class="columncontainer">
+                <div class="column"></div>
+                <div class="button"></div>
+            </div>
+        </div>
+        </td><td>
+        <!--token display for player turn(switching)-->
+            <div class="displaycontainer">
+                <h4 class="display">Player:</h4>
+                <div><div class="token player2"></div></div>
+         <!-- end of token display for player's turn-->
+
+         <!-- display at the end of the game-->
+
+                <h2 class="display win">Winner!</h2>
+                <h3 class="display win">Game Over</h3>
+            </div>
+            <div>
+            <!-- text/instructions for the game-->
+                <p class="hint"> Click to drop a token<br>into a column!</p>
+            </div>
+            </td></tr></table>
+
+         <!-- starts a new game-->
+        <div class="button reset">
+            <p>Reset</p>
+        </div>
+	</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title> Connect the dropped colored tiles </title>
+</head>
+<body>
+    <div class = 'container'>
+         <h1>Connect</h1>
+         <div id='board_cont'></div>
+         <div id="options">
+               <button title="restart current game" class="restart">restart</button>
+         </div>
+    </div>
+    <footer>
+        <a href='/' class='btn'>JS game</a>
+    </footer>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script src='js/application.js'></script>
+    <script>
+    board.init( $('#board_cont')):
+  </script>
+  </body>
+</html> -->
