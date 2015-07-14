@@ -2,18 +2,21 @@
 the template was borrowed from 
 http://www.codecademy.com/Smwaters/codebits/Uln4W/edit*/
 
+
+/*background color*/
 html {
     background-color: lightgreen;
 }
 
 body {
     display: block;
-    margin: 80px;
+    margin: 20px;
     text-align: center;
 }
 
+/*title*/
 h1 {
-    color: black;
+    color: darkblue;
     font-family: Verdana;
     font-size: 3em;
     background-color: dodgerblue;
@@ -34,20 +37,23 @@ table {
     margin: auto;
 }
 
+/* the button's colors,border, features */
 .button {
     height: 30px;
-    border: 4px solid white;
+    border: 4px solid yellow;
     border-radius: 10px;
-    background-color: darkblue;
+    background-color: darkred;
     margin: 0;
     display: inline-block;
 }
 
+/* color displayed when the mouse hovers over buttons*/
 .highlighted {
     background-color: royalblue;
     border-color: gold;
 }
 
+/* height and color of each column*/
 .column {
     padding: 0;
     margin: 0;
@@ -59,48 +65,58 @@ table {
     border-color: blue;
 }
 
+/* game container*/
 .gamecontainer {
     text-align: center;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
     display: inline-block;
 }
 
+/* joins on columns together */
 .columncontainer {
     display: inline-block;
 }
 
+/*boundaries for button of column container*/
 .columncontainer .button {
     width: 20px;
 }
 
+/* boundary for reset*/
 .reset {
     width: 100px;
     display: block;
     margin: auto;
 }
 
+/* display container around column slots*/
+
 .displaycontainer {
-    height: 160px;
-    width: 100px;
+    height: 260px;
+    width: 200px;
     display: inline-block;
 }
 
+/*vertical shifting using class of token and "Player" icon*/
 .display {
     margin: 3px 0 3px 0;
     font-family: Verdana;
 }
 
+/* hides the winning sign*/
 .win {
     display: none;
 }
 
+/* positioning of the token*/
 .displaycontainer > div {
     margin: auto;
     width: 52px;
     height: 52px;
 }
 
+/* size of circular token*/
 .displaycontainer .token {
     height:40px;
     width: 40px;
@@ -108,11 +124,14 @@ table {
     border-width: 6px;
 }
 
+
+/*instructions- "click to drop token!"*/
 .hint {
     font-family: Verdana;
     font-size: 12px;
 }
 
+/* text of reset button*/
 .button p {
     color: white;
     font-family: Verdana;
@@ -120,11 +139,13 @@ table {
     text-align: center;
 }
 
+/*first color for player2 to switch to*/
 .player1 {
-    background-color: yellow;
-    border: 3px solid orange;
+    background-color: blue;
+    border: 3px solid blue;
 }
 
+/*second color for player2 to switch to*/
 .player2 {
     background-color: red;
     border: 3px solid brown;
