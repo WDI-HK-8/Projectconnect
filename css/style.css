@@ -90,7 +90,7 @@ table {
     margin: auto;
 }
 
-/* display container around column slots*/
+/* display container next to column slots*/
 
 .displaycontainer {
     height: 160px;
@@ -110,7 +110,7 @@ table {
     display: none;
 }
 
-/* positioning of the token*/
+/* positioning of the display token*/
 .displaycontainer > div {
     margin: auto;
     width: 52px;
