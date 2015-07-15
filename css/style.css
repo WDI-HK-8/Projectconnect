@@ -93,9 +93,10 @@ table {
 /* display container around column slots*/
 
 .displaycontainer {
-    height: 260px;
-    width: 200px;
+    height: 160px;
+    width: 100px;
     display: inline-block;
+    background-color:lightgreen;
 }
 
 /*vertical shifting using class of token and "Player" icon*/
@@ -116,7 +117,7 @@ table {
     height: 52px;
 }
 
-/* size of circular token*/
+/* size of circular player token displayed*/
 .displaycontainer .token {
     height:40px;
     width: 40px;
@@ -150,7 +151,7 @@ table {
     background-color: red;
     border: 3px solid brown;
 }
-
+/* the actual gameplay token */
 .token {
     height: 20px;
     width: 20px;
