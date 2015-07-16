@@ -140,6 +140,7 @@ for(var i = 0; i< index.length-2; i++){
 $(document).ready(function() {
 
 
+/*-----hightlights all buttons------*/
 
   $('.button').mouseenter(function(){
     $(this).addClass("highlighted");
@@ -150,13 +151,39 @@ $(document).ready(function() {
     $(this).removeClass("highlighted");
   }); 
 
+/*-------switch the player----------*/
+
   $(".button").click(function(){
     $(".displaycontainer .token").toggleClass("player1");
 
     $(".displaycontainer .token").toggleClass("player2");
+  });
+ 
+ /*--------reset button--------------*/
 
-});
+   $('.button.reset').click(function()){
+     $(this).hide("token.player1");
+      $(this).hide("token.player2");
+      $('this').hide("display.win");
+   } 
+/*---------connect the column to the arrays and call attributes to get the div of the column------*/
+
 $('div .column').attr('dataindex')
-<div data_index = "0"></div>  call attributes of div to get container
+
+//<div data_index = "0"></div>  call attributes of div to get container
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
 
 
