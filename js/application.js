@@ -38,8 +38,7 @@ Game.prototype.insertToken = function(player, column) {
 // This function will return true if there are any 4 consecutive elements
 // either horizontally, vertically, or diagonally
 Game.prototype.checkWinner = function() {
-  return (this.checkVertical());
-  // return (this.checkHorizontal() || this.checkVertical() || this.checkDiagonal());
+  return (this.checkHorizontal() || this.checkVertical() || this.checkDiagonal());
 }
 
 // This function will return true if there are 4 consecutive vertical
@@ -98,76 +97,66 @@ Game.prototype.checkDiagonal = function() {
 /*----------check vertical array------*/
 // This function will return true if there are 4 consecutive elements
 // row and column in the array
-Game.prototype.checkVerticalArray = function(element, column) {
-  
-  var element = 0;
-  var player1 = 1;
-  var player2 = 2; 
+Game.prototype.checkVertical = function(array) {
+  var foundFourConnected = false;
+  var row = 0; 
 
-  while (column < 8 && element = 4) {
-     if (this.board[column][element])){
-     foundFourConnected = true;
-} 
-  return element;
+for(var i = 0; i< array.length-3; i++){
+    if (array[i]==array[i+1] && array[i]==array[i+2] && array[i]==array[i+3] && array[i]==array[i+4] && array[i]==array[i+5]){
+      return true
+    }
   }
+ 
 }
 
 /*----------check horizontal array-----------------*/
-Game.prototype.checkHorizontalArray = function(element, row) {
   
-  var element = 0;
-  var player1 = 1;
-  var player2 = 2; 
+Game.prototype.checkHorizontal = function(sameindex) {
+  var foundFourConnected = false;
+  var column = 0;
 
-  while (row < 7 && element = 4) {
-     if (this.board[row][element])){
-     foundFourConnected = true;
-} 
-  // YOUR CODE HERE
-  return element;
+  for(var i = 0; i< sameindex.length-2; i++){
+    if (sameindex[i]==sameindex[i] && sameindex[i+1]==sameindex[i+1] && sameindex[i+2]==sameindex[i+2] && sameindex[i+3]==sameindex[i+3] && sameindex[i+4]==sameindex[i+4] && sameindex[i+5]==sameindex[i+5]){
+      return true
+    }
   }
-}
 /*----------check diagonal array(NEED HELP)-----------------*/
-Game.prototype.checkDiagonalArray = function(element, diagonal) {
-
-  var element = 0; 
-  var player1 = 1;
-  var player2 = 2; 
-  curCol = column + 1;
-  curRow = row + 1;
-  countBack = 0
-  countForward = 0
+Game.prototype.checkDiagonal = function(index) {
+  var foundFourConnected = false;
+  var row = 0;
+ 
+ board[0]
 
 
-  while (curRow < 7 && curCol < 8 && board[curRow][curCol] == player) {
-      backCount++
-      curRow--;
-      curCol--;
+for(var i = 0; i< index.length-2; i++){
+    if (index[i]==index[i+1] && index[i+1]==index[i+2] && index[i+2]==index[i+3] && index[i+3]==index[i+4] && index[i+4]==index[i+5])|| (index[i-5]==index[i-4]&&index[i-4]==index[i-3]&&index[i-3]==index[i-2]&&index[i-2]==index[i-1])
+      return true
+    }
   }
-
-  backCount = 0;
-  forwardCount = 0;
-  curCol = column - 1;
-  curRow = row - 1;
 }
 
+/*----jquery,actions,displays----*/
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
 
 
-//   $('.button').mouseenter(function(){
-//     $(this).addClass("highlighted");
+  $('.button').mouseenter(function(){
+    $(this).addClass("highlighted");
    
-//   });
+  });
   
-//   $('.button').mouseleave(function(){
-//     $(this).removeClass("highlighted");
-//   }); 
+  $('.button').mouseleave(function(){
+    $(this).removeClass("highlighted");
+  }); 
 
-//   $(".button").click(function(){
-//     $(".displaycontainer .token").toggleClass("player1");
-//     $(".displaycontainer .token").toggleClass("player2");
+  $(".button").click(function(){
+    $(".displaycontainer .token").toggleClass("player1");
 
+    $(".displaycontainer .token").toggleClass("player2");
+
+});
+$('div .column').attr('dataindex')
+<div data_index = "0"></div>  call attributes of div to get container
 
 
