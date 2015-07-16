@@ -127,13 +127,13 @@ Game.prototype.checkHorizontal = function(sameindex) {
   }
 }
 
-/*----------check diagonal array(NEED HELP)-----------------*/
+/*----------check diagonal array-----------------*/
 Game.prototype.checkDiagonal = function(index) {
   var foundFourConnected = false;
   var row = 0;
 
   for(var i = 0; i< index.length-2; i++){
-    if ((index[i]   == index[i+1] &&
+    if ((index[i]  == index[i+1] &&
         index[i+1] == index[i+2] &&
         index[i+2] == index[i+3] &&
         index[i+3] == index[i+4] &&
@@ -150,23 +150,7 @@ Game.prototype.checkDiagonal = function(index) {
 var game = new Game();
 
 
-/*---------connect the column to the arrays and call attributes to get the div of the column------*/
 
-$('div .column').attr('dataindex')
 
-//<div data_index = "0"></div>  call attributes of div to get container
 
-/*-----dropping the token into the slot and animating it----------*/
-
-// //since each token is 26 pixels, the drop length will be a function based on that
-//   var maxHeight = 6
-//   var dropLength = function(index) {
-//    return (maxHeight - board[column].length) * 26; 
-//   };
-// // (slot converted to pixels (6 - 2) * 26 )
-
-// //$(this).?????
-//         //    .animate({??????dropLength(column)+"px"}, 300);
-
-//    });
 
