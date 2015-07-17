@@ -2,11 +2,11 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src='js/application.js'></script>
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src='js/application.js'></script>
 
 </head>
 
@@ -14,70 +14,220 @@
 
 <h2> Connect Four </h2>
 
-<table>      
-      <thead><th></th><thead>
-  <tr>
-    <td><div class= "emptytoken" id = "column1"> </div></td>
-    <td><div class= "emptytoken" id = "column2"> </div></td>
-    <td><div class= "emptytoken" id = "column3"> </div></td>
-    <td><div class= "emptytoken" id = "column4"> </div></td>
-    <td><div class= "emptytoken" id = "column5"> </div></td>
-    <td><div class= "emptytoken" id = "column6"> </div></td>
-    <td><div class= "emptytoken" id = "column7"> </div></td>
-  </tr>
 
-  <tr>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column2"></div></td>
-  <td><div class= "emptytoken" id = "column3"></div></td>
-  <td><div class= "emptytoken" id = "column4"></div></td>
-  <td><div class= "emptytoken" id = "column5"></div></td>
-  <td><div class= "emptytoken" id = "column6"></div></td>
-  <td><div class= "emptytoken" id = "column7"></div></td>
-  </tr>
+ <div class="gameboard">
+    <table>      
+        <thead><th></th></thead>
 
-  <tr>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  </tr>
-
-    <tr>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></div></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  </tr>
+ 
+        <tr>
+          <td> 
+              <div class= "emptytoken" id = "column1">
+              </div>
+          </td>   
+          <td>
+              <div class= "emptytoken" id = "column2"> 
+              </div>
+          </td>
+          <td>
+             <div class= "emptytoken" id = "column3">
+              </div>
+          </td>
+          <td>
+              <div class= "emptytoken" id = "column4"> 
+              </div>
+          </td>
+          <td>
+              <div class= "emptytoken" id = "column5">
+              </div>
+          </td>
+          <td>
+              <div class= "emptytoken" id = "column6">
+               </div>
+          </td>
+          <td>
+              <div class= "emptytoken" id = "column7">
+               </div>
+          </td>
+    </tr>
 
     <tr>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  </tr>
+      <td>
+          <div class= "emptytoken" id = "column1">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column2">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column3"> 
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column4">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column5">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column6">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column7">
+          </div>
+      </td>
+    </tr>
 
     <tr>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  <td><div class= "emptytoken" id = "column1"></td>
-  </tr>
+      <td>
+          <div class= "emptytoken" id = "column1">  
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column2">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column3">
+          </div>
+      </td>
+      <td>
+        <div class= "emptytoken" id = "column4">
+        </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column5">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column6">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column7">
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+          <div class= "emptytoken" id = "column1">  
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column2">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column3">
+          </div>
+      </td>
+      <td>
+        <div class= "emptytoken" id = "column4">
+        </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column5">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column6">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column7">
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+          <div class= "emptytoken" id = "column1">  
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column2">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column3">
+          </div>
+      </td>
+      <td>
+        <div class= "emptytoken" id = "column4">
+        </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column5">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column6">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column7">
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+          <div class= "emptytoken" id = "column1">  
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column2">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column3">
+          </div>
+      </td>
+      <td>
+        <div class= "emptytoken" id = "column4">
+        </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column5">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column6">
+          </div>
+      </td>
+      <td>
+          <div class= "emptytoken" id = "column7">
+          </div>
+      </td>
+    </tr>
+
+  
 
 
- </table>
+    </table>
+ </div>
+  
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Reset Game</button>
+</div>
+
+  <div class="displaycontainer">
+      <p id="tip"> Hover over a column <br>to drop your token! 
+      </p>
+      <p id="declwinner"> Winner is: 
+      </p>
+      <p> 
+        <span class="red">Red</span>:
+        <span class="blue">Blue</span>
+      </p>
+      <p id="score"> Score:
+       </p>
+  </div>
 
 </body>
 </html>

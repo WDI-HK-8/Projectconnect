@@ -1,31 +1,96 @@
 
 html {
-    background-color: white;
+    
 }
 
-div {
-    display: inline-block;
-    margin:1px 1px 1px 1px;
+body {
+    background-color: #E1F5A9;
+}
+
+h2 {
+   margin: 15px 80px 40px 50px;
+   float: center;
+}
+
+
+
+table, td {
+    border: 1px #70b8ff solid;
+    margin: 50px 50px 50px 50px;
+    width: 190px;
     height: 20px;
-    width: 20px;
+}
+
+thead, th {
+    boarder: 1px black solid;
+    height: 30px;
+    width: 190px;
+}
+
+.emptytoken {
+    display: inline-block;
+    margin: 3px 1px 0.01px 1px;
+    height: 20px;
+    width: 23px;
     border: 0.5px dashed black;
     border-radius: 100%;
 }
 
-table, td {
-    border: 1px #70b8ff solid;
-    margin:50px 50px 50px 50px;
-    width: 200px;
-    height: 20px;
+.btn-group {
+position: relative;
+bottom: 40px;
+left: 90px;
+top:-70px;
+
 }
 
-/*.emptytoken {
-    border:1px dashed #FF0000;
+.gameboard {
+
+position: relative;
+top: -40px;
 }
-*/
+
+.blue {
+   color: blue;
+   font-size: 13px;
+}
+
+.red {
+    color:red;
+    font-size: 13px;
+}
+
+.displaycontainer {
+
+   position: relative;
+    left: 300px;
+    top: -250px;
+    font-size: 10px;
+}
+
+#score {
+    position: relative;
+    left: -35px;
+    top: -10px;
+    font-size: 10px;
+}
+
+#tip {
+    position: relative;
+    font-family: Verdana;
+    font-size: 8px;
+    font-style: italic;
+    top: -30px;
+}
+
+#declwinner {
+    position:relative;
+    left:-35px;
+    top:-15px;
+}
 
 
-/*.token frame/ boarder*/
+
 
 
 
