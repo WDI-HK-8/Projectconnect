@@ -1,9 +1,28 @@
 
 html {
-    background-color: lightgrey;
+    background-color: white;
 }
 
+div {
+    display: inline-block;
+    margin:1px 1px 1px 1px;
+    height: 20px;
+    width: 20px;
+    border: 0.5px dashed black;
+    border-radius: 100%;
+}
 
+table, td {
+    border: 1px #70b8ff solid;
+    margin:50px 50px 50px 50px;
+    width: 200px;
+    height: 20px;
+}
+
+/*.emptytoken {
+    border:1px dashed #FF0000;
+}
+*/
 
 
 /*.token frame/ boarder*/
