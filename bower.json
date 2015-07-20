@@ -1,0 +1,22 @@
+{
+  "name": "Jeffrey",
+  "version": "0.0.0",
+  "homepage": "https://github.com/WDI-HK-8/Projectconnect",
+  "authors": [
+    "JEFFREY <monogut@gmail.com>"
+  ],
+  "description": "Bower for connect 4",
+  "main": "connect 4",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}
