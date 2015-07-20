@@ -15,25 +15,63 @@ h2 {
 
 
 table, td {
+    
     border: 1px #70b8ff solid;
+    border-top: 0.5px #70b8ff solid;
     margin: 50px 50px 50px 50px;
     width: 190px;
     height: 20px;
 }
 
-thead, th {
-    boarder: 1px black solid;
-    height: 30px;
-    width: 190px;
+.gameboard tr:first-child td  {
+    
+    border: 0.5px #70b8ff dashed; 
 }
 
 .emptytoken {
-    display: inline-block;
-    margin: 3px 1px 0.01px 1px;
-    height: 20px;
-    width: 23px;
+    position: ;
+    display:; 
+    margin: auto;
+    height: 16px;
+    width: 17px;
     border: 0.5px dashed black;
     border-radius: 100%;
+}
+
+.highlighted { 
+    background-color: gray ;
+    text-align: center;
+    border: 0.5px blue dashed; 
+}
+
+.hovertoken  {
+    display:none;
+    margin: auto;
+    height: 16px;
+    width: 17px;
+    border-radius: 100%;
+    
+}
+
+.token  {
+    display:none;
+    margin: auto;
+    height: 16px;
+    width: 17px;
+    border-radius: 100%;
+    
+}
+
+.player1 {
+
+    background-color: #2E64FE;
+    border: 2px solid #0000FF;
+}
+
+.player2 {
+
+    background-color: #FF0000;
+    border: 2px solid #B40404;
 }
 
 .btn-group {
@@ -41,7 +79,6 @@ position: relative;
 bottom: 40px;
 left: 90px;
 top:-70px;
-
 }
 
 .gameboard {
@@ -51,22 +88,37 @@ top: -40px;
 }
 
 .blue {
+   position:relative;
    color: blue;
    font-size: 13px;
+   top: 38px;
 }
 
 .red {
+    position:relative;
     color:red;
     font-size: 13px;
+    top: 38px;
 }
 
 .displaycontainer {
-
    position: relative;
     left: 300px;
     top: -250px;
     font-size: 10px;
 }
+
+.displaytoken {
+    position:relative;
+    left:-280px;
+    top:20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    margin:auto;
+}
+
+
 
 #score {
     position: relative;
@@ -80,14 +132,52 @@ top: -40px;
     font-family: Verdana;
     font-size: 8px;
     font-style: italic;
-    top: -30px;
+    top: -45px;
 }
 
 #declwinner {
     position:relative;
     left:-35px;
-    top:-15px;
+    top:-30px;
+    display:none;
 }
+
+#player {
+    position:relative;
+    left:-50px;
+    top:-90px;
+}
+
+#column1 {
+    
+  
+}
+
+#column2 {
+
+}
+
+#column3 {
+
+}
+
+#column4 {
+
+}
+
+#column5 {
+
+}
+
+#column6 {
+
+}
+
+#column7 {
+    
+}
+
+
 
 
 
